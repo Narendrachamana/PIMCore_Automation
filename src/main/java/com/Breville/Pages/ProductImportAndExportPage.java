@@ -16,7 +16,6 @@ public class ProductImportAndExportPage extends BaseSetup{
 	}
 
 	private static final String PRODUCT_EXPORT_TAB = "//span[text()='Product Export']";
-	private static final String IFRAME = "(//iframe)[2]";
 	private static final String ITEMNUMBERS_TEXTBOX = "//textarea[@id='itemNumbers']";
 	private static final String EXPORT_BUTTON = "//button[text()='Export']";
 	private static final String EXPORT_SCHCEDULED = "//h4[text()='Export Shceduled']";
@@ -25,9 +24,6 @@ public class ProductImportAndExportPage extends BaseSetup{
 	
 	@FindBy(how = How.XPATH, using = PRODUCT_EXPORT_TAB)
 	private WebElement wbProductExportTab;
-	
-	@FindBy(how = How.XPATH, using = IFRAME)
-	private WebElement wbIframe;
 	
 	@FindBy(how = How.XPATH, using = ITEMNUMBERS_TEXTBOX)
 	private WebElement wbItemNumbersTextbox;
@@ -44,7 +40,7 @@ public class ProductImportAndExportPage extends BaseSetup{
 	
 	public ProductImportAndExportPage enterItemNumbers(String data)
 	{
-		WrapperMethods.switchToFrame(wbIframe);
+		homepage.switchToIFrame();
 		WrapperMethods.enterText(wbItemNumbersTextbox, data);
 		return this;
 	}

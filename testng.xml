@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test  name="Test">
-    <classes>
-   	  <class name="com.Breville.Tests.LoginPageTest"/>
-      <class name="com.Breville.Tests.ExportProductTest"/>    
-     <class name="com.Breville.Tests.ItemStatusLinkTest"/>  
-    </classes>
-  </test> <!-- Test -->
+
+	<listeners>
+		<listener
+			class-name="com.Breville.Utilities.RetryListenerClass" />
+	</listeners>
+
+	<test name="Test">
+		<classes>
+			<class name="com.Breville.Tests.LoginPageTest" />
+			<class name="com.Breville.Tests.ExportProductTest" />
+			<class name="com.Breville.Tests.ItemStatusLinkTest" />
+			<class name="com.Breville.Tests.ManagePriceTest" />
+			<class name="com.Breville.Tests.BrandNameValidationTest" />
+			<class name="com.Breville.Tests.ProductSearchNameTest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
+

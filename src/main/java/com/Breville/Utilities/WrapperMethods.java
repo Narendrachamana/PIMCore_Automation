@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -43,7 +44,7 @@ import com.Breville.Base.BaseSetup;
 public class WrapperMethods extends BaseSetup {
 
 	private static final Logger log = LogManager.getLogger(BaseSetup.class);
-	
+
 	private static final boolean DEFAULT_VERIFY_CONTAINS = true;
 
 	public static void waitUntilElementIsVisible(WebElement element) {
@@ -67,6 +68,12 @@ public class WrapperMethods extends BaseSetup {
 			element.sendKeys(text);
 		}
 	}
+	
+	public static void clearText(WebElement element)
+	{
+		waitUntilElementIsVisible(element);
+		element.clear();
+	}
 
 	public static void clickElement(WebElement element) {
 		try {
@@ -78,17 +85,16 @@ public class WrapperMethods extends BaseSetup {
 			element.click();
 		}
 	}
-	
+
 	public static void switchToFrame(WebElement element) {
 		waitUntilElementIsClickable(element);
 		driver.switchTo().frame(element);
 	}
-	
+
 	public static void scrollToViewTillElement(WebElement element) {
 		waitUntilElementIsClickable(element);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
 	}
-
 
 	public static boolean isElementExists(By by) {
 		try {
@@ -166,7 +172,7 @@ public class WrapperMethods extends BaseSetup {
 
 	}
 
-	public  static void selectFromDropdownByIndex(WebElement element, int index) {
+	public static void selectFromDropdownByIndex(WebElement element, int index) {
 		waitUntilElementIsClickable(element);
 		new Select(element).selectByIndex(index);
 	}
@@ -196,7 +202,7 @@ public class WrapperMethods extends BaseSetup {
 		return wait.until(jQueryLoad) && wait.until(jsLoad) && wait.until(spinnerNotActive);
 	}
 
-	public  static String getText(WebElement element) {
+	public static String getText(WebElement element) {
 		try {
 			waitUntilElementIsVisible(element);
 			return element.getText();
@@ -241,8 +247,8 @@ public class WrapperMethods extends BaseSetup {
 				pressEnter();
 			} catch (Exception e) {
 				e.printStackTrace();
-			} 
-		break;
+			}
+			break;
 
 		}
 	}
@@ -262,19 +268,18 @@ public class WrapperMethods extends BaseSetup {
 		return path;
 
 	}
-	
-	
-	public static String verifyDownloadedFile(String filePath,String fileName) {	  
+
+	public static String verifyDownloadedFile(String filePath, String fileName) {
 
 		File folder = new File(filePath);
 		File[] listOfFiles = folder.listFiles();
 
 		boolean found = false;
-		
+
 		String fileName1 = "";
 
 		File f = null;
-		
+
 		for (File listOfFile : listOfFiles) {
 
 			if (listOfFile.isFile()) {
@@ -286,31 +291,30 @@ public class WrapperMethods extends BaseSetup {
 				}
 			}
 		}
-		
-		Assert.assertTrue(found ,"Downloaded document is not found");
+
+		Assert.assertTrue(found, "Downloaded document is not found");
 		log.info("Downloaded file is found");
-	
+
 		f.deleteOnExit();
-		
+
 		return fileName1;
 	}
-	
-	public static boolean deleteDownloadedFile(String path) {
-		boolean status = false ;
-	try 
-	{
-	if ((new File(path)).delete()) {
-	               status= true;
-	            } else {
-	            	status= false;
-	            }
 
-	          } catch (Exception ex) {
-	            ex.printStackTrace();
-	          }
-	return status;
+	public static boolean deleteDownloadedFile(String path) {
+		boolean status = false;
+		try {
+			if ((new File(path)).delete()) {
+				status = true;
+			} else {
+				status = false;
+			}
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		return status;
 	}
-	
+
 	public static String convertStringArrayToString(Object[][] data1, String delimiter) {
 		StringBuilder sb = new StringBuilder();
 		for (Object[] str : data1)
@@ -318,7 +322,7 @@ public class WrapperMethods extends BaseSetup {
 		return sb.substring(0, sb.length() - 1);
 	}
 
-	public static String getProductData(String path, String sheetName, int colNumber ,boolean flag) throws Exception {
+	public static String getProductData(String path, String sheetName, int colNumber, boolean flag) throws Exception {
 		Object[][] excelData = ExcelReader.getDataFromSpreadSheet(path, sheetName, colNumber);
 		int length = excelData.length;
 		StringBuilder sb = new StringBuilder();
@@ -327,46 +331,56 @@ public class WrapperMethods extends BaseSetup {
 		for (int i = 0; i < length; i++) {
 			for (int j = 0; j <= 0; j++) {
 				data = (String) excelData[i][j];
-				if(data != null && data != " " && data !="") {
-				sb.append(data);
+				if (data != null && data != " " && data != "") {
+					sb.append(data);
 				}
-				if(flag)
-					{
+				if (flag) {
 					sb.append(",");
-					}
-				else {
+				} else {
 					sb.append(" ");
 				}
 
 			}
 		}
 
-		data = sb.toString().substring(0, sb.toString().length()-1);
+		data = sb.toString().substring(0, sb.toString().length() - 1);
 
 		return data;
 	}
-	
-	
-	private static void ctrlV(String stringToPaste) throws AWTException{
-	    Robot robot = new Robot();
-	    StringSelection strToPaste = new StringSelection(stringToPaste);
-	    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(strToPaste, null);            
-	    robot.keyPress(KeyEvent.VK_CONTROL);
-	    robot.keyPress(KeyEvent.VK_V);
-	    robot.keyRelease(KeyEvent.VK_V);
-	    robot.keyRelease(KeyEvent.VK_CONTROL);
+
+	private static void ctrlV(String stringToPaste) throws AWTException {
+		Robot robot = new Robot();
+		StringSelection strToPaste = new StringSelection(stringToPaste);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(strToPaste, null);
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
 	}
 
-	private static void pressTab() throws AWTException{
-	    Robot robot = new Robot();
-	    robot.keyPress(KeyEvent.VK_TAB);
-	    robot.keyRelease(KeyEvent.VK_TAB);
+	private static void pressTab() throws AWTException {
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
 	}
 
-	private static void pressEnter() throws AWTException{
-	    Robot robot = new Robot();
-	    robot.keyPress(KeyEvent.VK_ENTER);
-	    robot.keyRelease(KeyEvent.VK_ENTER);
+	private static void pressEnter() throws AWTException {
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
+
+	public static void selectCheckboxValue(List<WebElement> elements, String valueToSelect) {
+		int i;
+		//System.out.println("Size" + elements.size());
+		for ( i = 0; i<= elements.size(); i++) {
+			//System.out.println("Option value " + elements.get(i).getAttribute("value"));
+			if (valueToSelect.equals(elements.get(i).getAttribute("value"))) {
+				elements.get(i).click();
+				break;
+			}
+		}
+	}
+	
 
 }

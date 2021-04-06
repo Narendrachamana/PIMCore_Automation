@@ -25,9 +25,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.Breville.Pages.BulkPublishPage;
 import com.Breville.Pages.GeneralPage;
 import com.Breville.Pages.HomePage;
 import com.Breville.Pages.LoginPage;
+import com.Breville.Pages.ManagePricePage;
 import com.Breville.Pages.ProductImportAndExportPage;
 import com.Breville.Utilities.DateForUse;
 import com.Breville.Utilities.ReadProperty;
@@ -67,6 +69,9 @@ public class BaseSetup {
 	public static HomePage homepage;
 	public static ProductImportAndExportPage productImportAndExportPage;
 	public static GeneralPage generalPage;
+	public static BulkPublishPage bulkPublishPage;
+	public static ManagePricePage managePricePage;
+	
 	
 	@BeforeSuite
 	public void setExtent() {
@@ -87,7 +92,7 @@ public class BaseSetup {
 
 		// Passing General information
 		extent.setSystemInfo("Environemnt", "UAT");
-		extent.setSystemInfo("User", "Narendra");
+		extent.setSystemInfo("User", System.getProperty("user.name"));
 		extent.setSystemInfo("Browser",browser);
 		extent.setSystemInfo("Platform", platform);
 		
@@ -190,6 +195,8 @@ public class BaseSetup {
 		homepage = new HomePage();
 		productImportAndExportPage = new ProductImportAndExportPage();
 		generalPage = new GeneralPage();
+		bulkPublishPage = new BulkPublishPage();
+		managePricePage = new ManagePricePage();
 	}
 
 	@AfterMethod
@@ -213,7 +220,7 @@ public class BaseSetup {
 
 		}
 
-		driver.close();
+		//driver.close();
 	}
 
 	@AfterSuite

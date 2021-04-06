@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="com.Breville.Tests.ExportProductTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="setExtent"/>
+          <include name="verifyProductExport"/>
+          <include name="endReport"/>
+          <include name="instalization"/>
+        </methods>
+      </class> <!-- com.Breville.Tests.ExportProductTest -->
+      <class name="com.Breville.Tests.ItemStatusLinkTest">
+        <methods>
+          <include name="verifyItemStatusLink" invocation-numbers="2"/>
+          <include name="getResult"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="instalization"/>
+        </methods>
+      </class> <!-- com.Breville.Tests.ItemStatusLinkTest -->
+      <class name="com.Breville.Tests.LoginPageTest">
+        <methods>
+          <include name="VerifyLoaginAndPublishItems" invocation-numbers="2"/>
+          <include name="getResult"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="instalization"/>
+        </methods>
+      </class> <!-- com.Breville.Tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

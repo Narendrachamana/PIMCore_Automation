@@ -32,7 +32,8 @@ public void verifyItemStatusLink(String itemNumber)
 	
 	homepage.clickSaveAndPublishWithoutVerifySuccessMessage()
 	.clickLogout();
-/*	generalPage.clickAddItemSatusLink()
+
+	/*	generalPage.clickAddItemSatusLink()
 	.clickBusinessUnit()
 	.selectItemStatusLink("02_Active_Critical");
 	homepage.clickSaveAndPublishWithoutVerifySuccessMessage();*/

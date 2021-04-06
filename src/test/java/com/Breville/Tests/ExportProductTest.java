@@ -31,7 +31,6 @@ public class ExportProductTest extends BaseSetup{
 	@Test
 	public void verifyProductExport() throws Exception
 	{
-		//System.out.println(driver);
 		extlogger = extent.createTest("verifyProductExport");
 		
 

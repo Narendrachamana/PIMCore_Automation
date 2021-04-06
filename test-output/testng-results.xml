@@ -1,40 +1,1094 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="6" failed="2" ignored="10" total="33" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50564" started-at="2021-03-18T07:32:30Z" finished-at="2021-03-18T07:33:21Z">
+  <suite name="Suite" duration-ms="831067" started-at="2021-03-24T07:28:15Z" finished-at="2021-03-24T07:42:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50564" started-at="2021-03-18T07:32:30Z" finished-at="2021-03-18T07:33:21Z">
+    <test name="Test" duration-ms="831067" started-at="2021-03-24T07:28:15Z" finished-at="2021-03-24T07:42:06Z">
       <class name="com.Breville.Tests.ExportProductTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.Breville.Tests.ExportProductTest@ff5b51f]" name="setExtent" is-config="true" duration-ms="153" started-at="2021-03-18T07:32:30Z" finished-at="2021-03-18T07:32:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ExportProductTest@ff5b51f]" name="instalization" is-config="true" duration-ms="5498" started-at="2021-03-18T07:32:30Z" finished-at="2021-03-18T07:32:36Z">
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ExportProductTest@69ea3742]" name="instalization" is-config="true" duration-ms="4044" started-at="2021-03-24T07:31:50Z" finished-at="2021-03-24T07:31:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instalization -->
-        <test-method status="PASS" signature="verifyProductExport()[pri:0, instance:com.Breville.Tests.ExportProductTest@ff5b51f]" name="verifyProductExport" duration-ms="40973" started-at="2021-03-18T07:32:36Z" finished-at="2021-03-18T07:33:17Z">
+        <test-method status="PASS" signature="verifyProductExport()[pri:0, instance:com.Breville.Tests.ExportProductTest@69ea3742]" name="verifyProductExport" duration-ms="39211" started-at="2021-03-24T07:31:54Z" finished-at="2021-03-24T07:32:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductExport -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ExportProductTest@ff5b51f]" name="getResult" is-config="true" duration-ms="4078" started-at="2021-03-18T07:33:17Z" finished-at="2021-03-18T07:33:21Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ExportProductTest@69ea3742]" name="getResult" is-config="true" duration-ms="84" started-at="2021-03-24T07:32:34Z" finished-at="2021-03-24T07:32:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductExport status=SUCCESS method=ExportProductTest.verifyProductExport()[pri:0, instance:com.Breville.Tests.ExportProductTest@ff5b51f] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProductExport status=SUCCESS method=ExportProductTest.verifyProductExport()[pri:0, instance:com.Breville.Tests.ExportProductTest@69ea3742] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Breville.Tests.ExportProductTest@ff5b51f]" name="endReport" is-config="true" duration-ms="258" started-at="2021-03-18T07:33:21Z" finished-at="2021-03-18T07:33:21Z">
+      </class> <!-- com.Breville.Tests.ExportProductTest -->
+      <class name="com.Breville.Tests.ItemStatusLinkTest">
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="instalization" is-config="true" duration-ms="4179" started-at="2021-03-24T07:32:34Z" finished-at="2021-03-24T07:32:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="verifyItemStatusLink" duration-ms="18830" started-at="2021-03-24T07:32:38Z" data-provider="productItemData" finished-at="2021-03-24T07:32:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AQP-LSAN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemStatusLink -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="getResult" is-config="true" duration-ms="132" started-at="2021-03-24T07:32:57Z" finished-at="2021-03-24T07:32:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyItemStatusLink status=SUCCESS method=ItemStatusLinkTest.verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="instalization" is-config="true" duration-ms="4072" started-at="2021-03-24T07:32:57Z" finished-at="2021-03-24T07:33:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="verifyItemStatusLink" duration-ms="19507" started-at="2021-03-24T07:33:01Z" data-provider="productItemData" finished-at="2021-03-24T07:33:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BDC0030NUC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemStatusLink -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="getResult" is-config="true" duration-ms="172" started-at="2021-03-24T07:33:20Z" finished-at="2021-03-24T07:33:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyItemStatusLink status=SUCCESS method=ItemStatusLinkTest.verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="instalization" is-config="true" duration-ms="4075" started-at="2021-03-24T07:33:21Z" finished-at="2021-03-24T07:33:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="verifyItemStatusLink" duration-ms="19608" started-at="2021-03-24T07:33:25Z" data-provider="productItemData" finished-at="2021-03-24T07:33:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BEC250]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemStatusLink -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="getResult" is-config="true" duration-ms="157" started-at="2021-03-24T07:33:44Z" finished-at="2021-03-24T07:33:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyItemStatusLink status=SUCCESS method=ItemStatusLinkTest.verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="instalization" is-config="true" duration-ms="4048" started-at="2021-03-24T07:33:44Z" finished-at="2021-03-24T07:33:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="verifyItemStatusLink" duration-ms="18497" started-at="2021-03-24T07:33:48Z" data-provider="productItemData" finished-at="2021-03-24T07:34:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SOV001BAM0NUK1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemStatusLink -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="getResult" is-config="true" duration-ms="129" started-at="2021-03-24T07:34:07Z" finished-at="2021-03-24T07:34:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyItemStatusLink status=SUCCESS method=ItemStatusLinkTest.verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="instalization" is-config="true" duration-ms="4086" started-at="2021-03-24T07:34:07Z" finished-at="2021-03-24T07:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="verifyItemStatusLink" duration-ms="18849" started-at="2021-03-24T07:34:11Z" data-provider="productItemData" finished-at="2021-03-24T07:34:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BBA500BSS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemStatusLink -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d]" name="getResult" is-config="true" duration-ms="115" started-at="2021-03-24T07:34:30Z" finished-at="2021-03-24T07:34:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyItemStatusLink status=SUCCESS method=ItemStatusLinkTest.verifyItemStatusLink(java.lang.String)[pri:0, instance:com.Breville.Tests.ItemStatusLinkTest@4b952a2d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.Breville.Tests.ItemStatusLinkTest -->
+      <class name="com.Breville.Tests.LoginPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="setExtent" is-config="true" duration-ms="147" started-at="2021-03-24T07:28:15Z" finished-at="2021-03-24T07:28:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="instalization" is-config="true" duration-ms="5302" started-at="2021-03-24T07:28:16Z" finished-at="2021-03-24T07:28:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="VerifyLoaginAndPublishItems" duration-ms="21759" started-at="2021-03-24T07:28:21Z" data-provider="productItemData" finished-at="2021-03-24T07:28:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AQP-LSAN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoaginAndPublishItems -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="getResult" is-config="true" duration-ms="83" started-at="2021-03-24T07:28:43Z" finished-at="2021-03-24T07:28:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoaginAndPublishItems status=SUCCESS method=LoginPageTest.VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="instalization" is-config="true" duration-ms="4026" started-at="2021-03-24T07:28:43Z" finished-at="2021-03-24T07:28:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="VerifyLoaginAndPublishItems" duration-ms="21755" started-at="2021-03-24T07:28:47Z" data-provider="productItemData" finished-at="2021-03-24T07:29:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BDC0030NUC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoaginAndPublishItems -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="getResult" is-config="true" duration-ms="76" started-at="2021-03-24T07:29:09Z" finished-at="2021-03-24T07:29:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoaginAndPublishItems status=SUCCESS method=LoginPageTest.VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="instalization" is-config="true" duration-ms="5156" started-at="2021-03-24T07:29:09Z" finished-at="2021-03-24T07:29:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="SKIP" signature="VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="VerifyLoaginAndPublishItems" duration-ms="39439" started-at="2021-03-24T07:29:14Z" data-provider="productItemData" finished-at="2021-03-24T07:29:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BEC250]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Saved successfully!']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bbe2b622ff86845efd2563e618f31298
+*** Element info: {Using=xpath, value=//div[text()='Saved successfully!']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Saved successfully!']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51919}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bbe2b622ff86845efd2563e618f31298
+*** Element info: {Using=xpath, value=//div[text()='Saved successfully!']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy16.getText(Unknown Source)
+at com.Breville.Pages.HomePage.verifyPublishSuccesfullMessage(HomePage.java:277)
+at com.Breville.Tests.LoginPageTest.VerifyLoaginAndPublishItems(LoginPageTest.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoaginAndPublishItems -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="getResult" is-config="true" duration-ms="60" started-at="2021-03-24T07:29:54Z" finished-at="2021-03-24T07:29:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoaginAndPublishItems status=SKIP method=LoginPageTest.VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="instalization" is-config="true" duration-ms="4085" started-at="2021-03-24T07:29:54Z" finished-at="2021-03-24T07:29:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="SKIP" signature="VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="VerifyLoaginAndPublishItems" duration-ms="31152" started-at="2021-03-24T07:29:58Z" data-provider="productItemData" finished-at="2021-03-24T07:30:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BEC250]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Saved successfully!']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51958}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd6bfbb6a2e963d63426df6f0838c9b5
+*** Element info: {Using=xpath, value=//div[text()='Saved successfully!']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Saved successfully!']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51958}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cd6bfbb6a2e963d63426df6f0838c9b5
+*** Element info: {Using=xpath, value=//div[text()='Saved successfully!']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy16.getText(Unknown Source)
+at com.Breville.Pages.HomePage.verifyPublishSuccesfullMessage(HomePage.java:277)
+at com.Breville.Tests.LoginPageTest.VerifyLoaginAndPublishItems(LoginPageTest.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoaginAndPublishItems -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="getResult" is-config="true" duration-ms="90" started-at="2021-03-24T07:30:29Z" finished-at="2021-03-24T07:30:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoaginAndPublishItems status=SKIP method=LoginPageTest.VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="instalization" is-config="true" duration-ms="4207" started-at="2021-03-24T07:30:29Z" finished-at="2021-03-24T07:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="FAIL" signature="VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="VerifyLoaginAndPublishItems" duration-ms="30367" started-at="2021-03-24T07:30:34Z" data-provider="productItemData" finished-at="2021-03-24T07:31:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BEC250]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Saved successfully!']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b885d27db2fd7e1badd2c7ed83260f3a
+*** Element info: {Using=xpath, value=//div[text()='Saved successfully!']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Saved successfully!']"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b885d27db2fd7e1badd2c7ed83260f3a
+*** Element info: {Using=xpath, value=//div[text()='Saved successfully!']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy16.getText(Unknown Source)
+at com.Breville.Pages.HomePage.verifyPublishSuccesfullMessage(HomePage.java:277)
+at com.Breville.Tests.LoginPageTest.VerifyLoaginAndPublishItems(LoginPageTest.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoaginAndPublishItems -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="getResult" is-config="true" duration-ms="385" started-at="2021-03-24T07:31:04Z" finished-at="2021-03-24T07:31:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoaginAndPublishItems status=FAILURE method=LoginPageTest.VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="instalization" is-config="true" duration-ms="4120" started-at="2021-03-24T07:31:04Z" finished-at="2021-03-24T07:31:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="VerifyLoaginAndPublishItems" duration-ms="21081" started-at="2021-03-24T07:31:08Z" data-provider="productItemData" finished-at="2021-03-24T07:31:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SOV001BAM0NUK1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoaginAndPublishItems -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="getResult" is-config="true" duration-ms="72" started-at="2021-03-24T07:31:30Z" finished-at="2021-03-24T07:31:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoaginAndPublishItems status=SUCCESS method=LoginPageTest.VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="instalization" is-config="true" duration-ms="4079" started-at="2021-03-24T07:31:30Z" finished-at="2021-03-24T07:31:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="VerifyLoaginAndPublishItems" duration-ms="16497" started-at="2021-03-24T07:31:34Z" data-provider="productItemData" finished-at="2021-03-24T07:31:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BBA500BSS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoaginAndPublishItems -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="getResult" is-config="true" duration-ms="68" started-at="2021-03-24T07:31:50Z" finished-at="2021-03-24T07:31:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoaginAndPublishItems status=SUCCESS method=LoginPageTest.VerifyLoaginAndPublishItems(java.lang.String)[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.Breville.Tests.LoginPageTest@5702b3b1]" name="endReport" is-config="true" duration-ms="299" started-at="2021-03-24T07:42:07Z" finished-at="2021-03-24T07:42:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.Breville.Tests.ExportProductTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.Breville.Tests.LoginPageTest -->
+      <class name="com.Breville.Tests.BrandNameValidationTest">
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.BrandNameValidationTest@73846619]" name="instalization" is-config="true" duration-ms="4041" started-at="2021-03-24T07:40:08Z" finished-at="2021-03-24T07:40:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="SKIP" signature="verifyBrandName()[pri:0, instance:com.Breville.Tests.BrandNameValidationTest@73846619]" name="verifyBrandName" duration-ms="29496" started-at="2021-03-24T07:40:13Z" finished-at="2021-03-24T07:40:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[test case is pass expected [Brand cannot be empty.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: test case is pass expected [Brand cannot be empty.] but found []
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.Breville.Tests.BrandNameValidationTest.verifyBrandName(BrandNameValidationTest.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrandName -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.BrandNameValidationTest@73846619]" name="getResult" is-config="true" duration-ms="4071" started-at="2021-03-24T07:40:42Z" finished-at="2021-03-24T07:40:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBrandName status=SKIP method=BrandNameValidationTest.verifyBrandName()[pri:0, instance:com.Breville.Tests.BrandNameValidationTest@73846619] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.BrandNameValidationTest@73846619]" name="instalization" is-config="true" duration-ms="4133" started-at="2021-03-24T07:40:46Z" finished-at="2021-03-24T07:40:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyBrandName()[pri:0, instance:com.Breville.Tests.BrandNameValidationTest@73846619]" name="verifyBrandName" duration-ms="19237" started-at="2021-03-24T07:40:50Z" finished-at="2021-03-24T07:41:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrandName -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.BrandNameValidationTest@73846619]" name="getResult" is-config="true" duration-ms="186" started-at="2021-03-24T07:41:09Z" finished-at="2021-03-24T07:41:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBrandName status=SUCCESS method=BrandNameValidationTest.verifyBrandName()[pri:0, instance:com.Breville.Tests.BrandNameValidationTest@73846619] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.Breville.Tests.BrandNameValidationTest -->
+      <class name="com.Breville.Tests.ProductSearchNameTest">
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ProductSearchNameTest@4bec1f0c]" name="instalization" is-config="true" duration-ms="4028" started-at="2021-03-24T07:41:10Z" finished-at="2021-03-24T07:41:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="SKIP" signature="verifyProductSearchName()[pri:0, instance:com.Breville.Tests.ProductSearchNameTest@4bec1f0c]" name="verifyProductSearchName" duration-ms="28695" started-at="2021-03-24T07:41:14Z" finished-at="2021-03-24T07:41:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[test case is pass expected [Search Name is Mandatory] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: test case is pass expected [Search Name is Mandatory] but found []
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.Breville.Tests.ProductSearchNameTest.verifyProductSearchName(ProductSearchNameTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSearchName -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ProductSearchNameTest@4bec1f0c]" name="getResult" is-config="true" duration-ms="119" started-at="2021-03-24T07:41:42Z" finished-at="2021-03-24T07:41:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductSearchName status=SKIP method=ProductSearchNameTest.verifyProductSearchName()[pri:0, instance:com.Breville.Tests.ProductSearchNameTest@4bec1f0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ProductSearchNameTest@4bec1f0c]" name="instalization" is-config="true" duration-ms="3971" started-at="2021-03-24T07:41:42Z" finished-at="2021-03-24T07:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyProductSearchName()[pri:0, instance:com.Breville.Tests.ProductSearchNameTest@4bec1f0c]" name="verifyProductSearchName" duration-ms="19877" started-at="2021-03-24T07:41:46Z" finished-at="2021-03-24T07:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSearchName -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ProductSearchNameTest@4bec1f0c]" name="getResult" is-config="true" duration-ms="142" started-at="2021-03-24T07:42:06Z" finished-at="2021-03-24T07:42:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductSearchName status=SUCCESS method=ProductSearchNameTest.verifyProductSearchName()[pri:0, instance:com.Breville.Tests.ProductSearchNameTest@4bec1f0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.Breville.Tests.ProductSearchNameTest -->
+      <class name="com.Breville.Tests.ManagePriceTest">
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="instalization" is-config="true" duration-ms="3973" started-at="2021-03-24T07:34:30Z" finished-at="2021-03-24T07:34:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="verifyPricingDetails" duration-ms="19752" started-at="2021-03-24T07:34:34Z" data-provider="RRPPriceData" finished-at="2021-03-24T07:34:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BDC0030NUC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPricingDetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="getResult" is-config="true" duration-ms="176" started-at="2021-03-24T07:34:54Z" finished-at="2021-03-24T07:34:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPricingDetails status=SUCCESS method=ManagePriceTest.verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="instalization" is-config="true" duration-ms="4118" started-at="2021-03-24T07:34:54Z" finished-at="2021-03-24T07:34:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="verifyPricingDetails" duration-ms="18196" started-at="2021-03-24T07:34:58Z" data-provider="RRPPriceData" finished-at="2021-03-24T07:35:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SOV001BAM0NUK1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPricingDetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="getResult" is-config="true" duration-ms="124" started-at="2021-03-24T07:35:16Z" finished-at="2021-03-24T07:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPricingDetails status=SUCCESS method=ManagePriceTest.verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="instalization" is-config="true" duration-ms="4036" started-at="2021-03-24T07:35:17Z" finished-at="2021-03-24T07:35:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="SKIP" signature="verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="verifyPricingDetails" duration-ms="86813" started-at="2021-03-24T07:35:21Z" data-provider="RRPPriceData" finished-at="2021-03-24T07:36:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BBA500BSS]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='RRP/MAP/Web Price:']//following :: input[1]' (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='RRP/MAP/Web Price:']//following :: input[1]' (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.Breville.Utilities.WrapperMethods.waitUntilElementIsVisible(WrapperMethods.java:52)
+at com.Breville.Utilities.WrapperMethods.enterText(WrapperMethods.java:62)
+at com.Breville.Pages.ManagePricePage.enterRRPPrice(ManagePricePage.java:30)
+at com.Breville.Tests.ManagePriceTest.verifyPricingDetails(ManagePriceTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='RRP/MAP/Web Price:']//following :: input[1]"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a4b4ed81c9b86bb466e9d3e340f0e11
+*** Element info: {Using=xpath, value=//span[text()='RRP/MAP/Web Price:']//following :: input[1]}
+at sun.reflect.GeneratedConstructorAccessor62.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPricingDetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="getResult" is-config="true" duration-ms="127" started-at="2021-03-24T07:36:47Z" finished-at="2021-03-24T07:36:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPricingDetails status=SKIP method=ManagePriceTest.verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="instalization" is-config="true" duration-ms="4194" started-at="2021-03-24T07:36:48Z" finished-at="2021-03-24T07:36:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="SKIP" signature="verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="verifyPricingDetails" duration-ms="83726" started-at="2021-03-24T07:36:52Z" data-provider="RRPPriceData" finished-at="2021-03-24T07:38:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BBA500BSS]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='RRP/MAP/Web Price:']//following :: input[1]' (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='RRP/MAP/Web Price:']//following :: input[1]' (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.Breville.Utilities.WrapperMethods.waitUntilElementIsVisible(WrapperMethods.java:52)
+at com.Breville.Utilities.WrapperMethods.enterText(WrapperMethods.java:62)
+at com.Breville.Pages.ManagePricePage.enterRRPPrice(ManagePricePage.java:30)
+at com.Breville.Tests.ManagePriceTest.verifyPricingDetails(ManagePriceTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='RRP/MAP/Web Price:']//following :: input[1]"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d30c76adcfcd3d083a9952e12b1fa088
+*** Element info: {Using=xpath, value=//span[text()='RRP/MAP/Web Price:']//following :: input[1]}
+at sun.reflect.GeneratedConstructorAccessor62.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPricingDetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="getResult" is-config="true" duration-ms="127" started-at="2021-03-24T07:38:16Z" finished-at="2021-03-24T07:38:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPricingDetails status=SKIP method=ManagePriceTest.verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="instalization" is-config="true" duration-ms="4212" started-at="2021-03-24T07:38:16Z" finished-at="2021-03-24T07:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="FAIL" signature="verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="verifyPricingDetails" duration-ms="83127" started-at="2021-03-24T07:38:20Z" data-provider="RRPPriceData" finished-at="2021-03-24T07:39:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BBA500BSS]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='RRP/MAP/Web Price:']//following :: input[1]' (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='RRP/MAP/Web Price:']//following :: input[1]' (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.Breville.Utilities.WrapperMethods.waitUntilElementIsVisible(WrapperMethods.java:52)
+at com.Breville.Utilities.WrapperMethods.enterText(WrapperMethods.java:62)
+at com.Breville.Pages.ManagePricePage.enterRRPPrice(ManagePricePage.java:30)
+at com.Breville.Tests.ManagePriceTest.verifyPricingDetails(ManagePriceTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='RRP/MAP/Web Price:']//following :: input[1]"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCS1B4', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 567a8dcdbbbbfef2388eda41f2d79d6e
+*** Element info: {Using=xpath, value=//span[text()='RRP/MAP/Web Price:']//following :: input[1]}
+at sun.reflect.GeneratedConstructorAccessor62.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPricingDetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="getResult" is-config="true" duration-ms="441" started-at="2021-03-24T07:39:43Z" finished-at="2021-03-24T07:39:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPricingDetails status=FAILURE method=ManagePriceTest.verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="instalization()[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="instalization" is-config="true" duration-ms="4212" started-at="2021-03-24T07:39:43Z" finished-at="2021-03-24T07:39:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instalization -->
+        <test-method status="PASS" signature="verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="verifyPricingDetails" duration-ms="20604" started-at="2021-03-24T07:39:48Z" data-provider="RRPPriceData" finished-at="2021-03-24T07:40:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BES0030NUC1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPricingDetails -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8]" name="getResult" is-config="true" duration-ms="164" started-at="2021-03-24T07:40:08Z" finished-at="2021-03-24T07:40:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPricingDetails status=SUCCESS method=ManagePriceTest.verifyPricingDetails(java.lang.String)[pri:0, instance:com.Breville.Tests.ManagePriceTest@3159c4b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.Breville.Tests.ManagePriceTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.Breville.Utilities.RetryListenerClass"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.Breville.Tests.ProductSearchNameTest">
+        <methods>
+          <include name="verifyProductSearchName"/>
+          <include name="getResult"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="instalization"/>
+        </methods>
+      </class> <!-- com.Breville.Tests.ProductSearchNameTest -->
       <class name="com.Breville.Tests.LoginPageTest">
         <methods>
-          <include name="VerifyLoaginAndPublishItems" invocation-numbers="2"/>
+          <include name="VerifyLoaginAndPublishItems" invocation-numbers="2 2 2"/>
           <include name="getResult"/>
           <include name="setExtent"/>
           <include name="endReport"/>
           <include name="instalization"/>
         </methods>
       </class> <!-- com.Breville.Tests.LoginPageTest -->
+      <class name="com.Breville.Tests.BrandNameValidationTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="setExtent"/>
+          <include name="verifyBrandName"/>
+          <include name="endReport"/>
+          <include name="instalization"/>
+        </methods>
+      </class> <!-- com.Breville.Tests.BrandNameValidationTest -->
+      <class name="com.Breville.Tests.ManagePriceTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="verifyPricingDetails" invocation-numbers="2 2 2"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="instalization"/>
+        </methods>
+      </class> <!-- com.Breville.Tests.ManagePriceTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

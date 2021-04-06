@@ -22,6 +22,9 @@ public class GeneralPage extends BaseSetup{
 	private static final String DELETE_ITEMSTATUSLINK_FIELDS = "//div[text()='Item Status']//following ::span[@data-ref='btnIconEl' and(starts-with (@id,'button-15'))][2]";
 	private static final String BUSINESS_UNITS_CHECKBOX ="//div[text()='Item Status']//following :: span[contains(@id, 'checkbox-15')]//following :: span[text()='BUS:']";
 	private static final String ITEMSTATUSLINK_DROPDOWN_BUTTON ="//span[text()='Item Status Link:']//following :: div[starts-with(@id,'combo-15')][4]";
+	private static final String PRODUCT_SEARCH_NAME_TEXTBOX = "//input[@name='searchName']";
+	private static final String BRAND_DELETION_BUTTON = "(//img[@data-qtip='Remove' and @src='/bundles/pimcoreadmin/img/flat-color-icons/delete.svg' ])[1]";
+	
 	
 	@FindBy(how = How.XPATH, using = ITEMSTATUSLINK_DROPDOWN)
 	private List<WebElement> wbItemStatusLinkDropdown;
@@ -32,11 +35,17 @@ public class GeneralPage extends BaseSetup{
 	@FindBy(how = How.XPATH, using = ADD_ITEMSTATUSLINK_FIELDS)
 	private WebElement wbAddItemStatusLinkFields;
 	
+	@FindBy(how = How.XPATH, using = PRODUCT_SEARCH_NAME_TEXTBOX)
+	private WebElement wbProductSearchName;
+	
 	@FindBy(how = How.XPATH, using = DELETE_ITEMSTATUSLINK_FIELDS)
 	private WebElement wbDeleteItemStatusLinkFields;
 	
 	@FindBy(how = How.XPATH, using = BUSINESS_UNITS_CHECKBOX)
 	private WebElement wbBusinessUnitCheckboxes;
+	
+	@FindBy(how = How.XPATH, using = BRAND_DELETION_BUTTON)
+	private WebElement wbBrandDeletionButton;
 
 	public GeneralPage selectItemStatusLink(String data) {
 		String al = "";
@@ -68,6 +77,19 @@ public class GeneralPage extends BaseSetup{
 	{
 		WrapperMethods.scrollToViewTillElement(wbBusinessUnitCheckboxes);
 		WrapperMethods.clickElement(wbBusinessUnitCheckboxes);
+		return this;
+		
+	}
+	
+	public GeneralPage clearProductSearchName() {
+		WrapperMethods.clearText(wbProductSearchName);
+		return this;
+	}
+	
+	public GeneralPage clickBrandDeletion()
+	{
+		WrapperMethods.scrollToViewTillElement(wbBrandDeletionButton);
+		WrapperMethods.clickElement(wbBrandDeletionButton);
 		return this;
 		
 	}

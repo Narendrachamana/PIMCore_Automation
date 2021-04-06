@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Breville.Tests.ExportProductTest">
+      <class name="com.Breville.Tests.BrandNameValidationTest">
         <methods>
           <include name="getResult"/>
           <include name="setExtent"/>
-          <include name="verifyProductExport"/>
+          <include name="verifyBrandName"/>
           <include name="endReport"/>
           <include name="instalization"/>
         </methods>
-      </class> <!-- com.Breville.Tests.ExportProductTest -->
+      </class> <!-- com.Breville.Tests.BrandNameValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

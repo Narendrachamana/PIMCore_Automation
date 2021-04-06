@@ -34,24 +34,31 @@ public class HomePage extends BaseSetup {
 
 	// SKU'S TABS
 	private static final String GENERAL_TAB = "//span[text()='General']";
-	private static final String RELEASE_TAB = "	(//span[text()='Release'])[3]";
-	private static final String PURCHES_OR_PLANNING_TAB = "(//span[text()='Purchase/Planning'])[3]";
-	private static final String SERVICE_BOM_TAB = "(//span[text()='Service BOM'])[3]";
-	private static final String WEB_TAB = "(//span[text()='Web'])[3]";
-	private static final String MANAGE_INVENTORY_TAB = "(//span[text()='Manage Inventory'])[3]";
-	private static final String MANAGE_PRICE_TAB = "(//span[text()='Manage Price'])[3]";
-	private static final String FINANCIAL_DIMENSIONS_TAB = "(//span[text()='Financial Dimensions'])[3]";
-	private static final String RETAIL_TAB = "(//span[text()='Retail'])[3]";
-	private static final String WAREHOUSING_TAB = "(//span[text()='Warehousing'])[3]";
-	private static final String SALESFORCE_TAB = "(//span[text()='SalesForce'])[3]";
+	private static final String RELEASE_TAB = "//span[text()='Release']";
+	private static final String PURCHES_OR_PLANNING_TAB = "//span[text()='Purchase/Planning']";
+	private static final String SERVICE_BOM_TAB = "//span[text()='Service BOM']";
+	private static final String WEB_TAB = "//span[text()='Web']";
+	private static final String MANAGE_INVENTORY_TAB = "//span[text()='Manage Inventory']";
+	private static final String MANAGE_PRICE_TAB = "//span[text()='Manage Price']";
+	private static final String FINANCIAL_DIMENSIONS_TAB = "//span[text()='Financial Dimensions']";
+	private static final String RETAIL_TAB = "//span[text()='Retail']";
+	private static final String WAREHOUSING_TAB = "//span[text()='Warehousing']";
+	private static final String SALESFORCE_TAB = "//span[text()='SalesForce']";
 	private static final String BREVILLE_TOOLS = "//li[@id='pimcore_menu_mds']";
 	private static final String PRODUCT_IMPORT_AND_EXPORT = "//span[text()='Product Import/Export']";
+	private static final String BULK_PUBLISH_TAB = "//span[text()='Bulk Publish']";
 	private static final String SAVE_AND_PUBLISH = "//span[text()='Save & Publish']";
 	private static final String SAVEDSUCCESSFUL_ALERTMESSAGE = "//div[text()='Saved successfully!']";
 	private static final String ERROR_POPUP = "//div[text()='Error']";
 	private static final String OK_BUTTON = "//div[text()='Error']//following:: span[text()='OK']";
 	private static final String LOGOUT_BUTTON = "//a[@id='pimcore_logout']";
 	private static final String BREVILLE_LOGO = "//div[@id='header']";
+	private static final String IFRAME = "(//iframe)[2]";
+	private static final String ERROR_MESSAGES = "//div[contains(@id,'panel-159') and @data-ref='innerCt']//li";
+	
+	
+	@FindBy(how = How.XPATH, using = IFRAME)
+	private WebElement wbIframe;
 
 	@FindBy(how = How.XPATH, using = SEACRH_ICON)
 	private WebElement wbSearchIcon;
@@ -76,7 +83,10 @@ public class HomePage extends BaseSetup {
 
 	@FindBy(how = How.XPATH, using = GENERAL_TAB)
 	private WebElement wbGeneralTab;
-
+	
+	@FindBy(how = How.XPATH, using = MANAGE_PRICE_TAB)
+	private WebElement wbManagePriceTab;
+	
 	@FindBy(how = How.XPATH, using = BREVILLE_TOOLS)
 	private WebElement wbBrevilleTools;
 
@@ -88,13 +98,19 @@ public class HomePage extends BaseSetup {
 
 	@FindBy(how = How.XPATH, using = ERROR_POPUP)
 	private WebElement wbErrorPopup;
+	
+	@FindBy(how = How.XPATH, using = ERROR_MESSAGES)
+	private List<WebElement> wbListOfErrorMessages;
 
 	@FindBy(how = How.XPATH, using = OK_BUTTON)
 	private WebElement wbOKButton;
 
 	@FindBy(how = How.XPATH, using = PRODUCT_IMPORT_AND_EXPORT)
 	private WebElement wbProductImportAndExport;
-
+	
+	@FindBy(how = How.XPATH, using = BULK_PUBLISH_TAB)
+	private WebElement wbBulkPublishTab;
+	
 	@FindBy(how = How.XPATH, using = LOGOUT_BUTTON)
 	private WebElement wbLogOut;
 
@@ -115,7 +131,7 @@ public class HomePage extends BaseSetup {
 		WrapperMethods.enterText(wbQuickSearchTextbox, data);
 		return this;
 	}
-
+	
 	public HomePage selectSKU(String skuNumber) {
 		String al = "";
 		for (int i = 0; i <= wbListOfSku.size(); i++) {
@@ -139,9 +155,25 @@ public class HomePage extends BaseSetup {
 
 		return this;
 	}
+	
+	public String displayErrorMessages() {
+		String al = "";
+		for (int i = 0; i < wbListOfErrorMessages.size(); i++) {
+			al = wbListOfErrorMessages.get(i).getText();
+		
+			//System.out.println(al);
+		}
+		
+		return al;
+	}
 
 	public HomePage clickGeneralTab() {
 		WrapperMethods.clickElement(wbGeneralTab);
+		return this;
+	}
+	
+	public HomePage clickManagePriceTab() {
+		WrapperMethods.clickElement(wbManagePriceTab);
 		return this;
 	}
 
@@ -170,6 +202,24 @@ public class HomePage extends BaseSetup {
 		return this;
 	}
 	
+	public HomePage clickSaveAndPublishWithoutValidatingErrorMessages(){
+		WrapperMethods.clickElement(wbSaveAndPublish);
+		try {
+			if(verifyPublishSuccesfullMessage()) {
+			}
+		}catch(Exception e)
+		{
+			try {
+				//extlogger.log(Status.FAIL,"Test Case Failed is " + e.getMessage(),MediaEntityBuilder.createScreenCaptureFromPath(WrapperMethods.getScreenShot()).build());
+			} catch (Exception e1) {
+	
+				e1.printStackTrace();
+			}
+			
+			}
+		return this;
+	}
+	
 	
 	public HomePage clickSaveAndPublishWithoutVerifySuccessMessage(){
 		WrapperMethods.clickElement(wbSaveAndPublish);
@@ -184,9 +234,33 @@ public class HomePage extends BaseSetup {
 		}
 		return this;
 	}
+	
+	public HomePage clickOKErrorPopup(){
+		try {
+			if(verifyErrorPopup()) {
+				WrapperMethods.clickElement(wbOKButton);
+				//clickLogout();	
+			}
+		}catch(Exception e)
+		{
+			verifyPublishSuccesfullMessage();
+		}
+		return this;
+	}
 
 	public HomePage clickProductImportAndExport() {
 		WrapperMethods.clickElement(wbProductImportAndExport);
+		return this;
+	}
+	
+	public HomePage switchToIFrame()
+	{
+		WrapperMethods.switchToFrame(wbIframe);
+		return this;
+	}
+	
+	public HomePage clickBulkPublishTab() {
+		WrapperMethods.clickElement(wbBulkPublishTab);
 		return this;
 	}
 
